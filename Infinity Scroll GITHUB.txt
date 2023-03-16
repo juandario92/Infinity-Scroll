@@ -4,5 +4,3 @@
 git add .
 git commit -m "first commit"
 git push origin main
-
-si no funciona el push main probar con master en vez de main
