@@ -63,5 +63,13 @@ async function getPhotos() {
     }
 }
 
+// Check to see if scrolling near botton of page, Load more photos
+window.addEventListener('scroll',() => {
+   if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 1000) {
+    getPhotos();
+    console.log("aca debe cargar la siguiente foto");
+   }
+});
+
 // On Load 
 getPhotos();
